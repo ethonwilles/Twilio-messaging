@@ -1,0 +1,32 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-wrapper{
+    background-color: #000a57;
+    height: 60px;
+    display: flex;
+}
+
+.nav-wrapper .nav-links{
+    flex: auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav-wrapper a{
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: #f3f0ff;
+}
+
+.nav-wrapper .login-box{
+    flex: inherit;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
