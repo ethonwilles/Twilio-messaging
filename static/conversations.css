@@ -1,0 +1,22 @@
+.conversations-page{
+    display: flex;
+}
+
+.left-side-contacts{
+    flex: inherit;
+    border: 2px solid black;
+    height: 100vh;
+}
+
+.right-side-convos{
+    flex: auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side-convos .message{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}

@@ -2,6 +2,7 @@ from flask import Flask, request, render_template
 from twilio.twiml.messaging_response import MessagingResponse
 from twilio.rest import Client
 import config
+from flask_pymongo import PyMongo
 app = Flask(__name__)
 
 account_sid = config.ACCOUNT_SID
@@ -51,6 +52,12 @@ def sms_response():
     print(message_body)
     resp.message(input('What would you like to say back?: '))
     return str(resp)
+
+
+# Mongo DB
+app.config['MONGO_URI'] = "mongodb://localhost:27017/twilioDatabase"
+mongo = PyMongo(app)
+
 
 
 
