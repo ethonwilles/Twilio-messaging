@@ -29,11 +29,13 @@
         <div class="banner">
             Banner
         </div>
+        <form action="{{ url_for('render_signup') }}" method="post">
         <div class="signup-fields">
-        <input type="text" class="username" placeholder="Enter New Username.."><br>
-        <input type="text" class="password" placeholder="Enter New Password..">
+        <input type="text" name="username" placeholder="Enter New Username.."><br>
+        <input type="text" name="password" placeholder="Enter New Password..">
         </div>
         <input type="submit" class="submit-btn" placeholder="Submit">
+        </form>
     </div>
     </div>
 </body>
